@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IOT ESSENSE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(2, 2, 3);
+      color: aliceblue;
+      font-family: 'Poppins', sans-serif;
+      
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      color: black;
+      height: 80px;
+      background-color: rgb(2, 2, 3);
+
+
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+      font-size: 1rem;
+      color: azure;
+      margin: 30px;
+     
+
+
+    }
+
+    nav ul li a {
+      list-style: none;
+      text-decoration: none;
+
+      font-size: 1rem;
+      color: azure;
+
+
+
+    }
+
+    nav ul li a :hover {
+
+      font-size: 1.5rem;
+      color: rgb(220, 0, 0);
+
+    }
+
+    .left {
+      font-size: 2rem;
+      color: azure;
+      
+
+    }
+
+    .left a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: rgb(255, 255, 255);
+     
+
+
+    }
+
+    .left a :hover {
+      text-decoration: none;
+      font-size: 2.5rem;
+      color: rgb(255, 255, 255);
+
+
+    }
+
+    .firstsection {
+      height: 100vh;
+      display: flex;
+      justify-content: space-around;
+      margin: 23px 0;
+      width: 100;
+    }
+
+    .leftsection {
+      display: flex;
+      justify-content: space-around;
+      margin: 23px 0;
+      width: 30%;
+    }
+
+    .rightsection {
+      display: flex;
+      justify-content: space-around;
+      margin: 23px 0;
+      height: 500px;
+
+    }
+
+    .gradient__text {
+      display: flex;
+      justify-content: space-around;
+      margin: 23px 0;
+      font-size: 6rem;
+      background: linear-gradient(to right, #ad6d71, #e4c421);
+      -webkit-background-clip: text;
+    
+      color: transparent;
+      /* Standard syntax */
+
+
+
+
+
+    }
+
+    .purple {
+      color: rgb(137, 17, 17);
+
+    }
+
+
+    /* Add your navigation bar styles here */
+
+    /* Define the keyframes for the scrolling animation */
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Apply the animation to a container element */
+    .marquee-container {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    /* Apply the animation to the content inside the container */
+    .marquee-content {
+      display: inline-block;
+      color: rgb(237, 12, 12);
+      animation: marquee 15s linear infinite;
+      font-size: 1.5rem;
+      /* Adjust the duration and other properties as needed */
+
+    }
+    .Events{
+      height: 100vh;
+      border: 10px groove rgba(181, 114, 27, 0.415);
+
+    }
+      
+     
+
+    .videoo {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .secondsection {
+      height: 100vh;
+      max-width: 80vw;
+      margin: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: azure;
+      background-color: linear-gradient(to right, #ad6d71, #e4c421);
+     
+
+    }
+
+    .videoo {
+      margin: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .main hr {
+      border: 0;
+
+      height: 5px;
+      margin: 40px 40px;
+    }
+    
+    
+        .container {
+          border: 2px solid #ebdcdc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+        .ls {
+          flex: 1;
+            text-align: left;
+            margin: right 10px;
+            padding: 100px;
+      
+    }
+
+    .rs {
+       flex: 1;
+            text-align: right;
+    }
+    img {
+            max-width: 100%;
+            height: auto;
+        }
+        #sliderr {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+
+        #slidess {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slidee {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .arrow {
+            position:absolute;
+            top: 45%;
+            width: 30px;
+            height: 30px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50%;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+        .uff{
+          height: 100vh;
+        }
+
+
+  </style>
+</head>
+
+ <body>
+  <header>
+    <nav>
+      <div class="left"><a href="/">IOT ES<span class="purple">SENSE</span></a></div>
+      <div class="right">
+        <ul>
+          <li><a href="#fs">Home</a></li>
+          <li><a href="/">Placements</a></li>
+          <li><a href="#acd">Academics</a></li>
+          <li><a href="#evt">Events</a></li>
+          <li><a href="#AT">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <!-- Container for the scrolling content -->
+    <div class="marquee-container">
+      <!-- Content to be scrolled -->
+      <div class="marquee-content">
+        <!-- Add your text or other content here -->
+        welcome to the official website of the department of IOT Assosiation.
+      </div>
+    </div>
+    <section class="firstsection" id="fs">
+      <div class="leftsection">
+
+        <h1 class="gradient__text">
+          IOT ESSENSE
+        </h1>
+      </div>
+
+      <div class="rightsection">
+        <img src="logo.jpg">
+      </div>
+
+    </section>
+    
+    <section class="Events" id="acd">
+      <div class="hod">
+        <img src="hod1.png">
+      </div>
+
+     
+    
+
+    
+    </section>
+    
+    <section class="videoo" id="AT">
+      <video width="" height="" controls autoplay loop muted class="videoo">
+        <source src="nn.mp4" type="video/mp4">
+        Your browser does not support the video
+      </video>
+     
+    </section>
+  
+ 
+    
+    <section class="secondsection">
+
+      <p>
+        The Internet of Things (IoT) is a transformative technological concept that interconnects a myriad of physical
+        devices through the power of the internet, enabling them to communicate, collect, and exchange data. This
+        interconnected web of "smart" objects, ranging from everyday items like home appliances to complex industrial
+        machinery, is embedded with sensors and software that facilitate the seamless flow of information. IoT
+        revolutionizes various sectors by providing real-time insights and enabling automation, thereby enhancing
+        efficiency and decision-making processes. From smart homes that adapt to occupants' preferences to industrial
+        systems optimizing production based on real-time data, IoT is reshaping how we live and work. However, the
+        widespread adoption of IoT also brings challenges such as security and privacy concerns, necessitating careful
+        consideration as this technology continues to reshape the landscape of our interconnected world.
+      </p>
+    </section>
+    
+
+    <section id="evt" class="uff">
+      <div class="container">
+      <div class="ls">
+
+        <p class="evttxt">
+          
+The IoT event was a dynamic convergence of innovative ideas and cutting-edge technologies, showcasing the transformative power of the Internet of Things (IoT). Attendees witnessed a plethora of enlightening moments, from captivating keynote sessions by industry pioneers that delved into the future of connected devices and ecosystems, to hands-on demonstrations unveiling the practical applications of IoT in various sectors. The bustling exhibition floor buzzed with excitement as attendees explored interactive displays, glimpsing firsthand the seamless integration of sensors, devices, and data analytics. Networking sessions fostered collaborative discussions, enabling participants to exchange insights and forge valuable connections. The event's success lay in its ability to encapsulate the essence of IoT, unraveling a tapestry of innovation, collaboration, and the limitless possibilities that arise when the physical and digital worlds harmoniously converge.
+        </p>
+      </div>
+
+      <div class="rs">
+        <div id="sliderr">
+          <div id="slidess" class="slide-container">
+              <div class="slidee"><img src="img1.jpg" alt="Image 1"></div>
+              <div class="slidee"><img src="e2.jpg" alt="Image 2"></div>
+              <div class="slidee"><img src="e3.jpg" alt="Image 3"></div>
+              <div class="slidee"><img src="e4.jpg" alt="Image 3"></div>
+              <div class="slidee"><img src="e5.jpg" alt="Image 3"></div>
+              <div class="slidee"><img src="e6.jpg" alt="Image 3"></div>
+              <div class="slidee"><img src="img 5.jpg" alt="Image 3"></div>
+              <div class="slidee"><img src="e1.jpg" alt="Image 3"></div>
+              <div class="slidee"><img src="img2.jpg" alt="Image 3"></div>
+          </div>
+  
+          <div class="arrow prev" onclick="prevSlide()">&#10094;</div>
+          <div class="arrow next" onclick="nextSlide()">&#10095;</div>
+      </div>
+
+      </div>
+      </div>
+
+    </section>
+  
+    <section>
+      <div class="containerr"></div>
+
+    </section>
+
+
+  </main>
+  <script>
+  
+    let currentSslide = 0;
+
+    function showSlide(index) {
+        const slides = document.getElementById('slidess');
+        currentSslide = index;
+        const slideWidth = document.querySelector('.slidee').clientWidth;
+        slides.style.transform = `translateX(-${currentSslide * slideWidth}px)`;
+    }
+
+    function nextSlide() {
+        const totalSlides = document.querySelectorAll('.slidee').length;
+        currentSslide = (currentSslide + 1) % totalSlides;
+        showSlide(currentSslide);
+    }
+
+    function prevSlide() {
+        const totalSlides = document.querySelectorAll('.slidee').length;
+        currentSslide = (currentSslide - 1 + totalSlides) % totalSlides;
+        showSlide(currentSslide);
+    }
+    
+</script>
+
+
+  
+
+
+
+</body>
+
+</html>
