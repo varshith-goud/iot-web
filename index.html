@@ -131,6 +131,22 @@
 
 
     }
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .gradient__text {
+      animation: blink 1s infinite; /* Change the duration or other properties as needed */
+    }
+    
 
     .purple {
       color: rgb(137, 17, 17);
@@ -185,17 +201,37 @@
     }
 
     .secondsection {
-      height: 100vh;
-      max-width: 80vw;
-      margin: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: azure;
-      background-color: linear-gradient(to right, #ad6d71, #e4c421);
+            
+            padding: 0px;
+            margin: 20px;
+            height: 100vh;
+        }
      
 
-    }
+    
+    /* Style for the heading */
+    .heading {
+            font-size: 24px;
+            font-weight: bold;
+            color: #7a96dd;
+            margin-left: 600px;
+        }
+
+        /* Style for the content */
+        .content {
+            font-size: 16px;
+            color: #f2eeee;
+            margin-top: 10px;
+        }
+        .content img {
+            width: 873px; /* Set your desired width */
+            height: 429px;
+            margin-top: 100px;
+            margin-left: 350px;
+            margin-right: 200px;
+            
+        }
+    
 
     .videoo {
       margin: 100px;
@@ -210,6 +246,43 @@
 
       height: 5px;
       margin: 40px 40px;
+    }
+    .head{
+      font-size: 24px;
+            font-weight: bold;
+            color: #7ea3ff;
+            margin-left: 650px;
+
+    }
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .blinking-text {
+      animation: blink 1s infinite; /* Change the duration or other properties as needed */
+    }
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .blinking-textt {
+      animation: blink 1s infinite; /* Change the duration or other properties as needed */
     }
     
     
@@ -281,7 +354,35 @@
         .uff{
           height: 100vh;
         }
+        
+        /* Style for the footer */
+        footer {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
 
+        /* Style for the social media icons */
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #ff1515;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .imgc img{
+          width: 873px; /* Set your desired width */
+            height: 429px;
+            margin-top: 0px;
+            margin-left: 250px;
+            margin-right: 200px;
+
+        }
+        
 
   </style>
 </head>
@@ -297,6 +398,7 @@
           <li><a href="#acd">Academics</a></li>
           <li><a href="#evt">Events</a></li>
           <li><a href="#AT">About</a></li>
+          <li><a href="login.html">contact us</a></li>
         </ul>
       </div>
     </nav>
@@ -347,6 +449,10 @@
  
     
     <section class="secondsection">
+      <div class="heading">
+        <h2 class="blinking-text">What is IOT?</h2>
+    </div>
+    <div class="content">
 
       <p>
         The Internet of Things (IoT) is a transformative technological concept that interconnects a myriad of physical
@@ -359,10 +465,18 @@
         widespread adoption of IoT also brings challenges such as security and privacy concerns, necessitating careful
         consideration as this technology continues to reshape the landscape of our interconnected world.
       </p>
+      <img src="11.png" alt="/" >
+      
+
+    </div>
     </section>
     
 
     <section id="evt" class="uff">
+      <div class="head">
+      
+        <h2 class="blinking-textt">Events At MREC</h2>
+      </div>
       <div class="container">
       <div class="ls">
 
@@ -399,7 +513,7 @@ The IoT event was a dynamic convergence of innovative ideas and cutting-edge tec
       <div class="containerr"></div>
 
     </section>
-
+   
 
   </main>
   <script>
@@ -426,6 +540,19 @@ The IoT event was a dynamic convergence of innovative ideas and cutting-edge tec
     }
     
 </script>
+<footer>
+  <div class="imgc">
+    <img src="cmt.png">
+  </div>
+  <p>Connect with us on social media:</p>
+  <div class="social-icons">
+      <!-- Replace the "#" with the actual URLs of your social media profiles -->
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Twitter</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">LinkedIn</a>
+  </div>
+</footer>
 
 
   
